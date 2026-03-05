@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Arte Infantil Castellón</title>
+  <meta name="description" content="Artículos sobre arte infantil, creatividad, actividades para niños en Castellón y consejos para padres." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🎨</div>
+        <span>Arte Infantil Castellón</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="academia.html">Academia</a></li>
+        <li><a href="talleres.html">Talleres</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="btn btn-primary">Inscríbete</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── BREADCRUMBS ── -->
+  <div class="breadcrumbs">
+    <div class="breadcrumbs-inner">
+      <a href="index.html">Inicio</a>
+      <span class="sep">›</span>
+      <span>Blog</span>
+    </div>
+  </div>
+
+  <!-- ── PAGE HERO ── -->
+  <section class="page-hero" style="background:linear-gradient(135deg,var(--sky) 0%, #2aa7a3 100%);">
+    <h1>Blog de Arte Infantil 📝</h1>
+    <p>Consejos, actividades y todo lo que necesitas saber sobre el arte y la creatividad en la infancia.</p>
+  </section>
+
+  <!-- ── ARTÍCULO DESTACADO ── -->
+  <section class="section">
+    <div class="container">
+      <span class="tag">⭐ Artículo destacado</span>
+      <h2 class="section-title">Último artículo publicado</h2>
+
+      <div style="background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1.3fr 1fr;align-items:stretch;">
+        <div style="min-height:320px;">
+          <div class="img-placeholder" style="min-height:100%;height:100%;"><span class="ph-icon">📖</span><p>Imagen del artículo destacado</p></div>
+        </div>
+        <div style="padding:40px;">
+          <span class="tag">Arte y desarrollo</span>
+          <h3 style="font-size:1.6rem;margin:12px 0 16px;line-height:1.3;">Los beneficios del arte en el desarrollo infantil</h3>
+          <p style="color:var(--mid);margin-bottom:20px;">El arte no es solo una actividad de entretenimiento: es una herramienta poderosa que contribuye al desarrollo cognitivo, emocional y social de los niños. En este artículo te explicamos por qué incluir el arte en la rutina de tu hijo es una de las mejores decisiones que puedes tomar...</p>
+          <span class="blog-date" style="display:block;margin-bottom:20px;">📅 12 de Enero de 2025 · 5 min de lectura</span>
+          <a href="#articulo-completo" class="btn btn-primary">Leer artículo completo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LISTADO DE ARTÍCULOS ── -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+
+      <!-- Filtros por categoría -->
+      <div class="tabs" style="margin-bottom:32px;">
+        <button class="tab-btn active" onclick="filterBlog(event,'todos')">Todos</button>
+        <button class="tab-btn" onclick="filterBlog(event,'arte')">Arte y desarrollo</button>
+        <button class="tab-btn" onclick="filterBlog(event,'castellon')">Castellón</button>
+        <button class="tab-btn" onclick="filterBlog(event,'marca')">Academia</button>
+        <button class="tab-btn" onclick="filterBlog(event,'creatividad')">Creatividad</button>
+      </div>
+
+      <div class="cards-grid cards-grid-3" id="blogGrid">
+
+        <article class="blog-card" data-cat="arte">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🧠</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag">Arte y desarrollo</span>
+            <h3>Los beneficios del arte en el desarrollo infantil</h3>
+            <p>El arte contribuye al desarrollo cognitivo, emocional y social de los niños. Descubre por qué es tan importante.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">12 Ene 2025</span>
+              <a href="#articulo-completo" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="arte">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖌️</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag">Arte y desarrollo</span>
+            <h3>5 actividades artísticas para desarrollar la creatividad en niños</h3>
+            <p>Ideas prácticas que puedes poner en marcha desde hoy mismo para potenciar el talento creativo de tu hijo.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">19 Ene 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="arte">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">⭐</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag">Arte y desarrollo</span>
+            <h3>Cómo saber si tu hijo tiene talento artístico</h3>
+            <p>Señales que indican que tu pequeño tiene un especial interés por las artes plásticas y cómo potenciarlo.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">26 Ene 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="arte">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">📚</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag">Arte y desarrollo</span>
+            <h3>Por qué las actividades artísticas son la mejor extraescolar</h3>
+            <p>Comparamos las artes plásticas con otras actividades extraescolares y te damos razones de peso para elegirlas.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">2 Feb 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="castellon">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🏙️</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--sky);color:white;">Castellón</span>
+            <h3>Las mejores actividades para niños en Castellón los fines de semana</h3>
+            <p>Una guía completa con los mejores planes para disfrutar en familia por nuestra ciudad.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">9 Feb 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="castellon">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">☀️</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--sky);color:white;">Castellón</span>
+            <h3>Qué hacer con niños en Castellón los fines de semana</h3>
+            <p>De la playa al museo, pasando por parques y talleres. Todo lo que puedes hacer con tus hijos en Castellón.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">16 Feb 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="castellon">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🎪</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--sky);color:white;">Castellón</span>
+            <h3>Actividades creativas para niños durante las fiestas de la Magdalena</h3>
+            <p>Cómo aprovechar las fiestas patronales de Castellón para vivir experiencias artísticas y culturales en familia.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">23 Feb 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="castellon">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🏛️</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--sky);color:white;">Castellón</span>
+            <h3>Visitar museos con niños en Castellón para despertar su creatividad</h3>
+            <p>Los museos de Castellón son una fuente de inspiración increíble. Te contamos cuáles visitar con tus hijos y cómo hacerlo divertido.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">2 Mar 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="marca">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🏫</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--lavender);color:white;">Academia</span>
+            <h3>Cómo funcionan nuestros talleres creativos para niños</h3>
+            <p>Una mirada por dentro a nuestra metodología, el equipo y cómo organizamos cada sesión para que sea especial.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">9 Mar 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="marca">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🎂</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--lavender);color:white;">Academia</span>
+            <h3>Ideas de cumpleaños creativos para niños</h3>
+            <p>Inspírate con nuestras propuestas para organizar una fiesta de cumpleaños original, divertida y llena de arte.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">16 Mar 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="creatividad">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖍️</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--coral);color:white;">Creatividad</span>
+            <h3>Materiales básicos para iniciar a los niños en el arte</h3>
+            <p>Guía de compra: los materiales esenciales que necesita cualquier pequeño artista para empezar con buen pie.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">23 Mar 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-cat="creatividad">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🏠</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag" style="background:var(--coral);color:white;">Creatividad</span>
+            <h3>Cómo estimular la creatividad de los niños en casa</h3>
+            <p>5 actividades sencillas que puedes hacer en casa para mantener viva la chispa creativa de tu hijo cada día.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">30 Mar 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ARTÍCULO COMPLETO (ejemplo) ── -->
+  <section class="section" style="background:var(--white);" id="articulo-completo">
+    <div class="container">
+      <div class="blog-hero-inner">
+        <div class="breadcrumbs-inner" style="padding:0;margin-bottom:24px;background:transparent;border:none;">
+          <a href="#" style="color:var(--coral);">Blog</a>
+          <span class="sep">›</span>
+          <span>Arte y desarrollo</span>
+          <span class="sep">›</span>
+          <span>Los beneficios del arte...</span>
+        </div>
+        <span class="tag">Arte y desarrollo</span>
+        <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);margin:12px 0 20px;">Los beneficios del arte en el desarrollo infantil</h1>
+        <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;color:var(--mid);font-size:0.88rem;margin-bottom:32px;">
+          <span>📅 12 de Enero de 2025</span>
+          <span>⏱ 5 min de lectura</span>
+          <span>✍️ Equipo de la Academia</span>
+        </div>
+        <div class="blog-cover">
+          <div class="img-placeholder" style="min-height:100%;"><span class="ph-icon">🖼️</span><p>Imagen de portada del artículo</p></div>
+        </div>
+      </div>
+      <div class="blog-content">
+        <p>Aquí va la introducción del artículo. Explica brevemente de qué va a tratar el texto y por qué es relevante para los padres que lo lean. Intenta que sea cercano, directo y que conecte emocionalmente con el lector desde el principio.</p>
+
+        <h2>¿Por qué el arte es importante para los niños?</h2>
+        <p>En este párrafo puedes desarrollar el primer argumento principal del artículo. Habla del impacto del arte en el desarrollo cognitivo: la concentración, la memoria visual, la capacidad de resolver problemas de forma creativa...</p>
+        <p>Continúa desarrollando la idea con datos, ejemplos concretos o anécdotas de la propia academia que hagan el texto más real y cercano.</p>
+
+        <h2>Beneficios emocionales</h2>
+        <p>El arte tiene un papel fundamental en la gestión emocional de los niños. A través de la pintura, el dibujo o la escultura, los pequeños aprenden a expresar lo que sienten incluso cuando no tienen palabras para ello.</p>
+        <ul>
+          <li>Mejora la autoestima y la seguridad en uno mismo</li>
+          <li>Desarrolla la inteligencia emocional</li>
+          <li>Reduce la ansiedad y el estrés</li>
+          <li>Fomenta la paciencia y la perseverancia</li>
+          <li>Estimula la expresión de sentimientos complejos</li>
+        </ul>
+
+        <h2>Beneficios cognitivos y académicos</h2>
+        <p>Numerosos estudios demuestran que los niños que practican artes plásticas con regularidad desarrollan mejores habilidades en otras áreas académicas. La coordinación mano-ojo, el pensamiento espacial y la atención al detalle son competencias que se transfieren a otras materias escolares.</p>
+
+        <h2>Habilidades sociales a través del arte</h2>
+        <p>En los talleres en grupo, los niños aprenden a compartir materiales, a escuchar las ideas de los demás, a dar y recibir feedback constructivo... El arte en comunidad es una herramienta poderosa para el desarrollo de la empatía y la colaboración.</p>
+
+        <h2>¿Cómo podéis apoyar el arte en casa?</h2>
+        <p>Aquí puedes dar consejos prácticos a los padres: tener una zona de arte en casa, no preocuparse demasiado por el desorden, elogiar el proceso más que el resultado, exponer las obras en casa para que el niño se sienta valorado...</p>
+        <p>Puedes terminar el artículo con una llamada a la acción, invitando a los padres a apuntarse a uno de los talleres de la academia.</p>
+
+        <div style="background:var(--sand);border-left:5px solid var(--coral);padding:24px 28px;border-radius:0 var(--radius) var(--radius) 0;margin:32px 0;">
+          <p style="font-style:italic;color:var(--dark);margin:0;font-size:1.05rem;">"El arte no enseña a los niños solo a pintar o dibujar. Les enseña a ver el mundo de una manera diferente, más atenta, más creativa y más llena de posibilidades."</p>
+        </div>
+
+        <p style="margin-top:24px;">¿Quieres que tu hijo disfrute de todos estos beneficios? En nuestra academia tenemos plazas disponibles para el próximo trimestre. <a href="contacto.html" style="color:var(--coral);font-weight:700;">¡Contacta con nosotros!</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>¿Te ha gustado este artículo? 🙌</h2>
+      <p>Suscríbete para recibir los próximos artículos directamente en tu email. Publicamos cada semana.</p>
+      <div class="btn-group">
+        <a href="contacto.html" class="btn btn-primary">Contactar con la academia</a>
+        <a href="talleres.html" class="btn btn-outline">Ver talleres disponibles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🎨</div>
+          <span>Arte Infantil Castellón</span>
+        </a>
+        <p>Un espacio creativo donde los niños descubren el arte, desarrollan su imaginación y expresan su personalidad única.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="academia.html">Academia</a></li>
+          <li><a href="talleres.html">Talleres y Eventos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Categorías del blog</h5>
+        <ul>
+          <li><a href="#">Arte y desarrollo</a></li>
+          <li><a href="#">Actividades en Castellón</a></li>
+          <li><a href="#">Academia</a></li>
+          <li><a href="#">Creatividad en casa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="#">📍 Calle Arte, 1 – Castellón</a></li>
+          <li><a href="#">📞 [Tu teléfono]</a></li>
+          <li><a href="#">✉️ [Tu email]</a></li>
+          <li><a href="#">🕐 Lunes a Viernes 16-20h</a></li>
+          <li><a href="#">🕐 Sábados 10-13h</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Academia de Arte Infantil Castellón. Todos los derechos reservados.</span>
+      <span>
+        <a href="#">Aviso legal</a> ·
+        <a href="#">Privacidad</a> ·
+        <a href="#">Cookies</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ── SCROLL TO TOP ── -->
+  <button id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => scrollBtn.classList.toggle('visible', window.scrollY > 400));
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    function filterBlog(e, cat) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+      document.querySelectorAll('#blogGrid .blog-card').forEach(card => {
+        if (cat === 'todos' || card.dataset.cat === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

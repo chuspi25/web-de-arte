@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto – Arte Infantil Castellón</title>
+  <meta name="description" content="Contacta con la Academia de Arte Infantil en Castellón. Inscribete en talleres, consulta precios y reserva tu plaza." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🎨</div>
+        <span>Arte Infantil Castellón</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="academia.html">Academia</a></li>
+        <li><a href="talleres.html">Talleres</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="contacto.html" class="btn btn-primary">Inscríbete</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── BREADCRUMBS ── -->
+  <div class="breadcrumbs">
+    <div class="breadcrumbs-inner">
+      <a href="index.html">Inicio</a>
+      <span class="sep">›</span>
+      <span>Contacto</span>
+    </div>
+  </div>
+
+  <!-- ── PAGE HERO ── -->
+  <section class="page-hero" style="background:linear-gradient(135deg,var(--lavender) 0%, #9333ea 100%);">
+    <h1>¡Hablemos! 👋</h1>
+    <p>Estamos encantados de responder todas tus dudas. Escríbenos, llámanos o ven a visitarnos en la academia.</p>
+  </section>
+
+  <!-- ── INFORMACIÓN + FORMULARIO CONTACTO ── -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Columna izquierda: info -->
+        <div class="contact-info">
+          <span class="tag">📬 Estamos aquí</span>
+          <h2>¿Cómo podemos ayudarte?</h2>
+          <p>Si tienes alguna pregunta sobre nuestros talleres, quieres apuntar a tu hijo, organizar una fiesta de cumpleaños o simplemente quieres conocernos, escríbenos. Te respondemos en menos de 24 horas.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <span>Calle [Tu calle y número], Castellón de la Plana, 12001</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Teléfono</strong>
+              <span>[Tu número de teléfono]</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <span>[Tu dirección de email]</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <strong>Horario de atención</strong>
+              <span>Lunes a Viernes: 16:00 – 20:00h<br>Sábados: 10:00 – 13:00h</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📷</div>
+            <div>
+              <strong>Redes sociales</strong>
+              <span>
+                <a href="#" style="color:var(--coral);font-weight:700;">Instagram</a> ·
+                <a href="#" style="color:var(--coral);font-weight:700;">Facebook</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="map-placeholder">
+            <!--
+              Para añadir Google Maps real, sustituye este bloque por:
+              <iframe
+                src="https://www.google.com/maps/embed?pb=TU_CODIGO_EMBED"
+                width="100%" height="260" style="border:0;border-radius:var(--radius);"
+                allowfullscreen loading="lazy">
+              </iframe>
+            -->
+            <span class="ph-icon">🗺️</span>
+            <p>Aquí irá el mapa de Google Maps</p>
+            <p style="font-size:0.75rem;opacity:0.6;">Sustituye este bloque por el iframe de Google Maps</p>
+          </div>
+        </div>
+
+        <!-- Columna derecha: formulario -->
+        <div class="form-card">
+          <h3>Envíanos un mensaje ✉️</h3>
+
+          <!-- NOTA: Los formularios HTML sin backend solo muestran los campos.
+               Para enviar emails necesitarás conectar un servicio como Formspree,
+               EmailJS o un backend propio. Añade action="https://formspree.io/f/TUCODIGO"
+               al form cuando tengas el servicio configurado. -->
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="666 000 000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option value="">Selecciona un asunto...</option>
+                <option value="info">Información general</option>
+                <option value="inscripcion">Inscripción a taller</option>
+                <option value="cumpleanos">Cumpleaños creativo</option>
+                <option value="visita">Visita a la academia</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-size:0.82rem;font-weight:400;cursor:pointer;">
+                <input type="checkbox" required style="margin-top:3px;flex-shrink:0;width:auto;" />
+                He leído y acepto la <a href="#" style="color:var(--coral);">política de privacidad</a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Enviar mensaje 🚀</button>
+            <p class="form-note" style="text-align:center;margin-top:14px;">Te respondemos en menos de 24 horas laborables</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FORMULARIO INSCRIPCIÓN ── -->
+  <section class="section" style="background:var(--white);" id="inscripcion">
+    <div class="container">
+      <span class="tag">📝 Reserva tu plaza</span>
+      <h2 class="section-title">Inscripción a talleres</h2>
+      <p class="section-subtitle">Rellena este formulario para inscribir a tu hijo en uno de nuestros talleres. Te confirmaremos la plaza disponible en 24 horas.</p>
+
+      <div class="form-card" style="max-width:800px;margin:0 auto;">
+        <h3>Formulario de inscripción 🎨</h3>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre_padre">Nombre del padre/madre/tutor</label>
+              <input type="text" id="nombre_padre" name="nombre_padre" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email_padre">Email de contacto</label>
+              <input type="email" id="email_padre" name="email_padre" placeholder="tu@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefono_padre">Teléfono</label>
+              <input type="tel" id="telefono_padre" name="telefono_padre" placeholder="666 000 000" required />
+            </div>
+            <div class="form-group">
+              <label for="nombre_nino">Nombre del niño/a</label>
+              <input type="text" id="nombre_nino" name="nombre_nino" placeholder="Nombre del niño/a" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="edad">Edad del niño/a</label>
+              <select id="edad" name="edad" required>
+                <option value="">Selecciona la edad...</option>
+                <option value="4">4 años</option>
+                <option value="5">5 años</option>
+                <option value="6">6 años</option>
+                <option value="7">7 años</option>
+                <option value="8">8 años</option>
+                <option value="9">9 años</option>
+                <option value="10">10 años</option>
+                <option value="11">11 años</option>
+                <option value="12">12 años</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="taller">Taller de interés</label>
+              <select id="taller" name="taller" required>
+                <option value="">Selecciona un taller...</option>
+                <option value="acuarela">Pintura con acuarelas – Sábados 10:00h</option>
+                <option value="collage">Collage y creatividad – Miércoles 17:00h</option>
+                <option value="arcilla">Modelado con arcilla – Jueves 17:30h</option>
+                <option value="dibujo">Dibujo e ilustración – Martes 17:00h</option>
+                <option value="acrilico">Pintura acrílica – Viernes 17:00h</option>
+                <option value="manos">Arte con las manos – Lunes 17:00h</option>
+                <option value="finde">Taller de sábado mañana</option>
+                <option value="cumpleanos">Cumpleaños creativo</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="observaciones">Observaciones o alergias</label>
+            <textarea id="observaciones" name="observaciones" placeholder="¿Tiene alguna alergia a materiales? ¿Alguna necesidad especial que debamos conocer? ¿Quieres clase de prueba gratuita?" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="como">¿Cómo nos has conocido?</label>
+            <select id="como" name="como">
+              <option value="">Selecciona una opción...</option>
+              <option value="instagram">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="google">Google</option>
+              <option value="recomendacion">Recomendación de un amigo/a</option>
+              <option value="colegio">A través de un colegio</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;font-size:0.82rem;font-weight:400;cursor:pointer;">
+              <input type="checkbox" required style="margin-top:3px;flex-shrink:0;width:auto;" />
+              He leído y acepto la <a href="#" style="color:var(--coral);">política de privacidad</a> y el <a href="#" style="color:var(--coral);">aviso legal</a>
+            </label>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-primary" style="flex:1;min-width:200px;">Solicitar inscripción 🎨</button>
+            <button type="reset" class="btn btn-outline" style="flex:0;">Limpiar formulario</button>
+          </div>
+          <p class="form-note" style="text-align:center;margin-top:14px;">
+            Revisaremos tu solicitud y te confirmaremos la disponibilidad de plaza en menos de 24 horas laborables.<br>
+            <strong>Recuerda: la primera clase es completamente gratuita 🎉</strong>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="section">
+    <div class="container">
+      <span class="tag">❓ Preguntas frecuentes</span>
+      <h2 class="section-title">Lo que más nos preguntan</h2>
+      <div style="max-width:760px;">
+
+        <div style="border-bottom:1px solid rgba(0,0,0,0.08);padding:20px 0;">
+          <h4 style="font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;" onclick="toggleFaq(this)">
+            ¿Cuál es la edad mínima para apuntarse a los talleres? <span>+</span>
+          </h4>
+          <p class="faq-ans" style="color:var(--mid);font-size:0.9rem;margin-top:12px;display:none;">Los talleres están pensados para niños a partir de 4 años. Tenemos actividades adaptadas a cada rango de edad: 4-6 años, 7-10 años y 8-12 años. Escríbenos si tienes dudas sobre qué grupo es el más adecuado para tu hijo.</p>
+        </div>
+
+        <div style="border-bottom:1px solid rgba(0,0,0,0.08);padding:20px 0;">
+          <h4 style="font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;" onclick="toggleFaq(this)">
+            ¿Hay que traer algún material? <span>+</span>
+          </h4>
+          <p class="faq-ans" style="color:var(--mid);font-size:0.9rem;margin-top:12px;display:none;">No es necesario. Todos los materiales están incluidos en el precio del taller. Solo necesitas traer ropa cómoda que no le importe manchar. Te recomendamos traer también una bata o delantal por si acaso.</p>
+        </div>
+
+        <div style="border-bottom:1px solid rgba(0,0,0,0.08);padding:20px 0;">
+          <h4 style="font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;" onclick="toggleFaq(this)">
+            ¿Puedo apuntar a mi hijo sin experiencia previa? <span>+</span>
+          </h4>
+          <p class="faq-ans" style="color:var(--mid);font-size:0.9rem;margin-top:12px;display:none;">¡Por supuesto! De hecho, la mayoría de nuestros alumnos llegan sin ninguna experiencia previa. Los talleres están diseñados para que cada niño avance a su propio ritmo, sin presión y desde cero si hace falta.</p>
+        </div>
+
+        <div style="border-bottom:1px solid rgba(0,0,0,0.08);padding:20px 0;">
+          <h4 style="font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;" onclick="toggleFaq(this)">
+            ¿Es verdad que la primera clase es gratuita? <span>+</span>
+          </h4>
+          <p class="faq-ans" style="color:var(--mid);font-size:0.9rem;margin-top:12px;display:none;">Sí, completamente gratuita y sin compromiso. Queremos que los niños y sus familias puedan conocernos antes de tomar ninguna decisión. Rellena el formulario de inscripción y selecciona "clase de prueba gratuita" en observaciones.</p>
+        </div>
+
+        <div style="border-bottom:1px solid rgba(0,0,0,0.08);padding:20px 0;">
+          <h4 style="font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;" onclick="toggleFaq(this)">
+            ¿Cuántos niños hay por taller? <span>+</span>
+          </h4>
+          <p class="faq-ans" style="color:var(--mid);font-size:0.9rem;margin-top:12px;display:none;">Los grupos son muy reducidos, de un máximo de 6 a 8 niños por taller. Esto nos permite dar una atención personalizada a cada alumno y asegurarnos de que todos progresan y se lo pasan bien.</p>
+        </div>
+
+        <div style="padding:20px 0;">
+          <h4 style="font-size:1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;" onclick="toggleFaq(this)">
+            ¿Puedo reservar un cumpleaños para un grupo grande? <span>+</span>
+          </h4>
+          <p class="faq-ans" style="color:var(--mid);font-size:0.9rem;margin-top:12px;display:none;">Sí. Organizamos cumpleaños creativos para grupos de hasta 15 niños. Tenemos tres packs disponibles (Básico, Premium y Deluxe) adaptados a diferentes necesidades y presupuestos. Consulta la <a href="talleres.html#cumpleanos" style="color:var(--coral);">sección de cumpleaños</a> para más información.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>¿Lista la primera clase? 🎨</h2>
+      <p>Recuerda que la primera sesión es completamente gratuita. ¡No hay excusa para no venir a conocernos!</p>
+      <div class="btn-group">
+        <a href="#inscripcion" class="btn btn-primary">Inscribirme ahora</a>
+        <a href="talleres.html" class="btn btn-outline">Ver todos los talleres</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🎨</div>
+          <span>Arte Infantil Castellón</span>
+        </a>
+        <p>Un espacio creativo donde los niños descubren el arte, desarrollan su imaginación y expresan su personalidad única.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="academia.html">Academia</a></li>
+          <li><a href="talleres.html">Talleres y Eventos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Talleres</h5>
+        <ul>
+          <li><a href="talleres.html">Pintura y dibujo</a></li>
+          <li><a href="talleres.html">Manualidades</a></li>
+          <li><a href="talleres.html">Arcilla y cerámica</a></li>
+          <li><a href="talleres.html">Collage creativo</a></li>
+          <li><a href="talleres.html">Cumpleaños creativos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="#">📍 Calle Arte, 1 – Castellón</a></li>
+          <li><a href="#">📞 [Tu teléfono]</a></li>
+          <li><a href="#">✉️ [Tu email]</a></li>
+          <li><a href="#">🕐 Lunes a Viernes 16-20h</a></li>
+          <li><a href="#">🕐 Sábados 10-13h</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Academia de Arte Infantil Castellón. Todos los derechos reservados.</span>
+      <span>
+        <a href="#">Aviso legal</a> ·
+        <a href="#">Privacidad</a> ·
+        <a href="#">Cookies</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ── SCROLL TO TOP ── -->
+  <button id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => scrollBtn.classList.toggle('visible', window.scrollY > 400));
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    function toggleFaq(el) {
+      const ans = el.nextElementSibling;
+      const icon = el.querySelector('span');
+      const isOpen = ans.style.display === 'block';
+      ans.style.display = isOpen ? 'none' : 'block';
+      icon.textContent = isOpen ? '+' : '−';
+    }
+  </script>
+</body>
+</html>

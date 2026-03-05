@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia de Arte Infantil – Castellón de la Plana</title>
+  <meta name="description" content="Academia de arte infantil en Castellón. Talleres creativos, manualidades y actividades artísticas para niños de 4 a 12 años." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🎨</div>
+        <span>Arte Infantil Castellón</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="academia.html">Academia</a></li>
+        <li><a href="talleres.html">Talleres</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="btn btn-primary">Inscríbete</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="tag">🌟 Academia en Castellón de la Plana</span>
+        <h1 class="hero-title">
+          Donde la <span>imaginación</span> no tiene límites
+        </h1>
+        <p class="hero-desc">
+          Un espacio creativo donde los niños descubren el arte a través del juego, la experimentación y la expresión personal. Talleres de pintura, escultura, manualidades y mucho más.
+        </p>
+        <div class="hero-ctas">
+          <a href="talleres.html" class="btn btn-primary">Ver próximos talleres</a>
+          <a href="contacto.html" class="btn btn-outline">Solicitar información</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">+200</div>
+            <div class="stat-label">Alumnos felices</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Técnicas artísticas</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="slider-wrap" id="heroSlider">
+          <div class="slides" id="heroSlides">
+            <div class="slide">
+              <div class="slide-placeholder">
+                <span class="ph-icon">🖼️</span>
+                <p>Foto principal del taller</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-placeholder">
+                <span class="ph-icon">🎨</span>
+                <p>Niños pintando</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-placeholder">
+                <span class="ph-icon">✂️</span>
+                <p>Taller de manualidades</p>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn prev" onclick="changeSlide(-1)">&#8592;</button>
+          <button class="slider-btn next" onclick="changeSlide(1)">&#8594;</button>
+        </div>
+        <div class="slider-dots" id="heroDots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+        <div class="hero-img-badge">
+          <span class="emoji">🎉</span>
+          ¡Primera clase gratuita!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES STRIP ── -->
+  <section class="features-strip">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">👶</div>
+        <h4>Grupos reducidos</h4>
+        <p>Atención personalizada para cada niño</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🎓</div>
+        <h4>Metodología creativa</h4>
+        <p>Aprendizaje a través del juego y el arte</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📅</div>
+        <h4>Horarios flexibles</h4>
+        <p>Talleres de mañana, tarde y fines de semana</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🌈</div>
+        <h4>Todas las técnicas</h4>
+        <p>Pintura, escultura, collage, cerámica y más</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRÓXIMOS TALLERES ── -->
+  <section class="section">
+    <div class="container">
+      <span class="tag">📅 Próximas actividades</span>
+      <h2 class="section-title">Talleres que no te puedes perder</h2>
+      <p class="section-subtitle">Inscripciones abiertas para los próximos talleres. Plazas muy limitadas.</p>
+
+      <div class="cards-grid cards-grid-3">
+
+        <div class="card">
+          <div class="card-img">
+            <div class="img-placeholder">
+              <span class="ph-icon">🎨</span>
+              <p>Foto del taller</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="ws-badge accent-coral">4–6 años</span>
+            <h3>Pintura con acuarelas</h3>
+            <p>Los pequeños artistas descubren el mundo del color a través de la acuarela.</p>
+            <div class="card-meta">
+              <span>📅 Sábados 10:00h</span>
+              <span>⏱ 90 min</span>
+              <span>💶 15€</span>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <div class="img-placeholder">
+              <span class="ph-icon">✂️</span>
+              <p>Foto del taller</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="ws-badge accent-mint">7–10 años</span>
+            <h3>Collage y creatividad</h3>
+            <p>Tijeras, papeles y mucha imaginación. Un taller explosivo de creación libre.</p>
+            <div class="card-meta">
+              <span>📅 Miércoles 17:00h</span>
+              <span>⏱ 90 min</span>
+              <span>💶 15€</span>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <div class="img-placeholder">
+              <span class="ph-icon">🏺</span>
+              <p>Foto del taller</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="ws-badge accent-lavender">8–12 años</span>
+            <h3>Modelado con arcilla</h3>
+            <p>Manos a la obra: los niños crean figuras y esculturas con arcilla natural.</p>
+            <div class="card-meta">
+              <span>📅 Jueves 17:30h</span>
+              <span>⏱ 2 horas</span>
+              <span>💶 18€</span>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:36px;">
+        <a href="talleres.html" class="btn btn-outline">Ver todos los talleres →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CUMPLEAÑOS CREATIVOS ── -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="birthday-section">
+        <div>
+          <span class="tag" style="background:var(--yellow);color:var(--dark);">🎂 Eventos especiales</span>
+          <h2>¡Celebra su cumpleaños de forma especial!</h2>
+          <p>Convertimos el cumpleaños de tu pequeño en una experiencia artística y creativa que él y sus amigos no olvidarán jamás.</p>
+          <ul class="birthday-list">
+            <li>Pack básico: 1,5 horas de taller creativo para hasta 10 niños</li>
+            <li>Pack premium: 2 horas + materiales exclusivos + decoración temática</li>
+            <li>Pack deluxe: Todo incluido + reportaje fotográfico + exposición de obras</li>
+            <li>Personalización según los gustos del cumpleañero</li>
+          </ul>
+          <a href="contacto.html" class="btn btn-secondary">Solicitar presupuesto 🎈</a>
+        </div>
+        <div class="birthday-img">
+          <div class="img-placeholder" style="min-height:100%;">
+            <span class="ph-icon">🎂</span>
+            <p>Foto de cumpleaños</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALERÍA HOME ── -->
+  <section class="section">
+    <div class="container">
+      <span class="tag">🖼️ Obras de nuestros alumnos</span>
+      <h2 class="section-title">El talento de nuestros pequeños artistas</h2>
+      <p class="section-subtitle">Una muestra de las obras creadas en nuestros talleres. ¡Cada niño es un artista único!</p>
+      <div class="gallery-grid">
+        <div class="gallery-item wide">
+          <div class="img-placeholder" style="min-height:100%;"><span class="ph-icon">🖼️</span><p>Obra destacada</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-placeholder" style="min-height:100%;"><span class="ph-icon">🎨</span><p>Obra</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-placeholder" style="min-height:100%;"><span class="ph-icon">✏️</span><p>Obra</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-placeholder" style="min-height:100%;"><span class="ph-icon">🏺</span><p>Obra</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-placeholder" style="min-height:100%;"><span class="ph-icon">🖌️</span><p>Obra</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-placeholder" style="min-height:100%;"><span class="ph-icon">✂️</span><p>Obra</p></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="academia.html#galeria" class="btn btn-outline">Ver galería completa →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INSTAGRAM FEED ── -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <span class="tag">📸 Síguenos en Instagram</span>
+      <h2 class="section-title">@artinfantilcastellon</h2>
+      <p class="section-subtitle">Cada día compartimos el proceso creativo de nuestros alumnos. ¡Síguenos para no perderte nada!</p>
+      <div class="ig-grid">
+        <div class="ig-item"><div class="ig-item-inner"><span class="ph-icon">📷</span><span>Post</span></div></div>
+        <div class="ig-item"><div class="ig-item-inner"><span class="ph-icon">📷</span><span>Post</span></div></div>
+        <div class="ig-item"><div class="ig-item-inner"><span class="ph-icon">📷</span><span>Post</span></div></div>
+        <div class="ig-item"><div class="ig-item-inner"><span class="ph-icon">📷</span><span>Post</span></div></div>
+        <div class="ig-item"><div class="ig-item-inner"><span class="ph-icon">📷</span><span>Post</span></div></div>
+        <div class="ig-item"><div class="ig-item-inner"><span class="ph-icon">📷</span><span>Post</span></div></div>
+      </div>
+      <div style="text-align:center;margin-top:28px;">
+        <a href="https://www.instagram.com/" target="_blank" class="btn btn-secondary">Ver perfil de Instagram ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BLOG PREVIEW ── -->
+  <section class="section">
+    <div class="container">
+      <span class="tag">📝 Nuestro blog</span>
+      <h2 class="section-title">Artículos para padres curiosos</h2>
+      <p class="section-subtitle">Consejos, actividades y todo sobre el arte infantil en Castellón.</p>
+      <div class="cards-grid cards-grid-3">
+
+        <article class="blog-card">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">📖</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag">Arte y desarrollo</span>
+            <h3>Los beneficios del arte en el desarrollo infantil</h3>
+            <p>Descubre cómo las actividades artísticas potencian la concentración, la creatividad y la inteligencia emocional de los niños.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">12 Enero 2025</span>
+              <a href="blog.html" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">📖</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag">Castellón</span>
+            <h3>Las mejores actividades para niños en Castellón los fines de semana</h3>
+            <p>Una guía completa con planes creativos y culturales para disfrutar en familia por nuestra ciudad.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">5 Febrero 2025</span>
+              <a href="blog.html" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">📖</span><p>Imagen del artículo</p></div>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag">Creatividad</span>
+            <h3>Cómo estimular la creatividad de los niños en casa</h3>
+            <p>5 actividades sencillas que puedes hacer en casa para mantener viva la chispa creativa de tu hijo.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="blog-date">18 Febrero 2025</span>
+              <a href="blog.html" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:36px;">
+        <a href="blog.html" class="btn btn-outline">Ver todos los artículos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>¿Listo para empezar? 🎨</h2>
+      <p>La primera clase es completamente gratuita. ¡Ven a conocernos sin compromiso!</p>
+      <div class="btn-group">
+        <a href="contacto.html" class="btn btn-primary">Reservar clase gratuita</a>
+        <a href="talleres.html" class="btn btn-outline">Ver talleres disponibles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🎨</div>
+          <span>Arte Infantil Castellón</span>
+        </a>
+        <p>Un espacio creativo donde los niños descubren el arte, desarrollan su imaginación y expresan su personalidad única.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="academia.html">Academia</a></li>
+          <li><a href="talleres.html">Talleres y Eventos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Talleres</h5>
+        <ul>
+          <li><a href="talleres.html">Pintura y dibujo</a></li>
+          <li><a href="talleres.html">Manualidades</a></li>
+          <li><a href="talleres.html">Arcilla y cerámica</a></li>
+          <li><a href="talleres.html">Collage creativo</a></li>
+          <li><a href="talleres.html">Cumpleaños creativos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="#">📍 Calle Arte, 1 – Castellón</a></li>
+          <li><a href="#">📞 [Tu teléfono]</a></li>
+          <li><a href="#">✉️ [Tu email]</a></li>
+          <li><a href="#">🕐 Lunes a Viernes 16-20h</a></li>
+          <li><a href="#">🕐 Sábados 10-13h</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Academia de Arte Infantil Castellón. Todos los derechos reservados.</span>
+      <span>
+        <a href="#">Aviso legal</a> ·
+        <a href="#">Privacidad</a> ·
+        <a href="#">Cookies</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ── SCROLL TO TOP ── -->
+  <button id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script>
+    // Nav toggle
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Hero slider
+    let currentSlide = 0;
+    const slides = document.getElementById('heroSlides');
+    const dots   = document.querySelectorAll('.dot');
+
+    function updateSlider() {
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+    }
+    function changeSlide(dir) {
+      const total = dots.length;
+      currentSlide = (currentSlide + dir + total) % total;
+      updateSlider();
+    }
+    function goToSlide(i) { currentSlide = i; updateSlider(); }
+    setInterval(() => changeSlide(1), 4000);
+
+    // Scroll to top
+    const scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>

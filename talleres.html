@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talleres y Eventos – Arte Infantil Castellón</title>
+  <meta name="description" content="Talleres de arte para niños en Castellón. Pintura, manualidades, arcilla, collage y cumpleaños creativos. Plazas limitadas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🎨</div>
+        <span>Arte Infantil Castellón</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="academia.html">Academia</a></li>
+        <li><a href="talleres.html" class="active">Talleres</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="btn btn-primary">Inscríbete</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── BREADCRUMBS ── -->
+  <div class="breadcrumbs">
+    <div class="breadcrumbs-inner">
+      <a href="index.html">Inicio</a>
+      <span class="sep">›</span>
+      <span>Talleres y Eventos</span>
+    </div>
+  </div>
+
+  <!-- ── PAGE HERO ── -->
+  <section class="page-hero" style="background:linear-gradient(135deg,var(--mint) 0%, #00b386 100%);">
+    <h1>Talleres y Eventos 🎭</h1>
+    <p>Explora todos nuestros talleres creativos para niños de 4 a 12 años. Plazas muy limitadas, ¡reserva la tuya ya!</p>
+  </section>
+
+  <!-- ── TABS / FILTROS ── -->
+  <section class="section">
+    <div class="container">
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab(event,'proximos')">📅 Próximos talleres</button>
+        <button class="tab-btn" onclick="switchTab(event,'pasados')">✅ Talleres realizados</button>
+        <button class="tab-btn" onclick="switchTab(event,'finde')">🎉 Fines de semana</button>
+      </div>
+
+      <!-- TAB: PRÓXIMOS -->
+      <div class="tab-content active" id="proximos">
+        <div class="cards-grid cards-grid-3">
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🎨</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-coral">4–6 años</span>
+              <span class="ws-badge accent-mint" style="float:right;">¡Plazas disponibles!</span>
+              <h3>Pintura con acuarelas</h3>
+              <p>Los pequeños artistas descubren el mundo del color a través de la técnica de la acuarela. Aprenderán a mezclar colores y crear fondos atmosféricos.</p>
+              <div class="card-meta">
+                <span>📅 Sábados 10:00h</span>
+                <span>⏱ 90 min</span>
+                <span>💶 15€</span>
+                <span>👦 Máx. 8 niños</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme en este taller</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">✂️</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-mint">7–10 años</span>
+              <span class="ws-badge accent-coral" style="float:right;">Últimas plazas</span>
+              <h3>Collage y creatividad</h3>
+              <p>Tijeras, papeles de colores, revistas y mucha imaginación. Los niños crean composiciones únicas explorando texturas y formas.</p>
+              <div class="card-meta">
+                <span>📅 Miércoles 17:00h</span>
+                <span>⏱ 90 min</span>
+                <span>💶 15€</span>
+                <span>👦 Máx. 8 niños</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme en este taller</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🏺</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-lavender">8–12 años</span>
+              <span class="ws-badge accent-mint" style="float:right;">¡Plazas disponibles!</span>
+              <h3>Modelado con arcilla</h3>
+              <p>Manos a la obra: los niños aprenden a modelar figuras con arcilla natural, descubriendo las posibilidades de la escultura tridimensional.</p>
+              <div class="card-meta">
+                <span>📅 Jueves 17:30h</span>
+                <span>⏱ 2 horas</span>
+                <span>💶 18€</span>
+                <span>👦 Máx. 6 niños</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme en este taller</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">✏️</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-yellow">5–9 años</span>
+              <span class="ws-badge accent-mint" style="float:right;">¡Plazas disponibles!</span>
+              <h3>Dibujo e ilustración</h3>
+              <p>Desde el boceto hasta la obra final. Los niños aprenden técnicas de dibujo con lápiz, carboncillo y rotuladores.</p>
+              <div class="card-meta">
+                <span>📅 Martes 17:00h</span>
+                <span>⏱ 90 min</span>
+                <span>💶 15€</span>
+                <span>👦 Máx. 8 niños</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme en este taller</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🌈</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-sky">6–12 años</span>
+              <span class="ws-badge accent-mint" style="float:right;">¡Plazas disponibles!</span>
+              <h3>Pintura acrílica</h3>
+              <p>Los niños descubren la pintura acrílica sobre lienzo, explorando capas, texturas y composición artística.</p>
+              <div class="card-meta">
+                <span>📅 Viernes 17:00h</span>
+                <span>⏱ 2 horas</span>
+                <span>💶 18€</span>
+                <span>👦 Máx. 8 niños</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme en este taller</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🖐️</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-coral">4–7 años</span>
+              <span class="ws-badge accent-yellow" style="float:right;">Nuevo</span>
+              <h3>Arte con las manos</h3>
+              <p>Pintura dactilar, estampaciones y técnicas sensoriales pensadas para los más pequeños. ¡Se vale ensuciar!</p>
+              <div class="card-meta">
+                <span>📅 Lunes 17:00h</span>
+                <span>⏱ 60 min</span>
+                <span>💶 12€</span>
+                <span>👦 Máx. 8 niños</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme en este taller</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB: PASADOS -->
+      <div class="tab-content" id="pasados">
+        <p style="color:var(--mid);margin-bottom:28px;">Una selección de los talleres que ya hemos realizado. ¿Te los perdiste? ¡Suscríbete al blog para no perderte los próximos!</p>
+        <div class="cards-grid cards-grid-3">
+
+          <div class="card" style="opacity:0.8;">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🎄</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge" style="background:var(--light);color:var(--mid);">Finalizado</span>
+              <h3>Taller de Navidad</h3>
+              <p>Creamos adornos navideños con arcilla, pintura y materiales reciclados. ¡Un éxito total!</p>
+              <div class="card-meta">
+                <span>📅 Diciembre 2024</span>
+                <span>⏱ 2 horas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="opacity:0.8;">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🌸</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge" style="background:var(--light);color:var(--mid);">Finalizado</span>
+              <h3>Taller de primavera</h3>
+              <p>Acuarelas florales y naturaleza como inspiración. Los niños crearon jardines de papel únicos.</p>
+              <div class="card-meta">
+                <span>📅 Abril 2024</span>
+                <span>⏱ 90 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="opacity:0.8;">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🦄</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge" style="background:var(--light);color:var(--mid);">Finalizado</span>
+              <h3>Criaturas mágicas</h3>
+              <p>Dragones, unicornios y monstruos adorables. Los niños dieron vida a sus criaturas imaginarias.</p>
+              <div class="card-meta">
+                <span>📅 Marzo 2024</span>
+                <span>⏱ 2 horas</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB: FINDE -->
+      <div class="tab-content" id="finde">
+        <p style="color:var(--mid);margin-bottom:28px;">Talleres especiales de fin de semana, perfectos para pasar un rato creativo en familia o con amigos.</p>
+        <div class="cards-grid cards-grid-3">
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">☀️</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-yellow">4–12 años</span>
+              <h3>Taller de sábado mañana</h3>
+              <p>Sesión libre de fin de semana. Los niños trabajan en el proyecto de su elección con la guía del profesor.</p>
+              <div class="card-meta">
+                <span>📅 Sábados 10:00h</span>
+                <span>⏱ 2 horas</span>
+                <span>💶 18€</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <div class="img-placeholder"><span class="ph-icon">🌙</span><p>Foto del taller</p></div>
+            </div>
+            <div class="card-body">
+              <span class="ws-badge accent-lavender">8–12 años</span>
+              <h3>Taller de tarde-noche</h3>
+              <p>Para los artistas más mayores, sesiones especiales de tarde con técnicas avanzadas como óleo y grabado.</p>
+              <div class="card-meta">
+                <span>📅 Viernes 18:30h</span>
+                <span>⏱ 2 horas</span>
+                <span>💶 20€</span>
+              </div>
+              <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Inscribirme</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CUMPLEAÑOS CREATIVOS ── -->
+  <section class="section" style="background:var(--white);" id="cumpleanos">
+    <div class="container">
+      <span class="tag">🎂 Celebraciones especiales</span>
+      <h2 class="section-title">Cumpleaños creativos</h2>
+      <p class="section-subtitle">Convierte el día más especial del año en una experiencia artística que nunca olvidarán.</p>
+
+      <div class="cards-grid cards-grid-3" style="margin-bottom:48px;">
+
+        <div class="card" style="border-top: 5px solid var(--mint);">
+          <div class="card-body" style="padding-top:28px;">
+            <div style="font-size:2.5rem;margin-bottom:12px;">🎈</div>
+            <h3>Pack Básico</h3>
+            <p style="font-size:1.4rem;font-family:'Baloo 2',cursive;font-weight:800;color:var(--coral);margin-bottom:4px;">Desde 120€</p>
+            <p style="margin-bottom:20px;">Para hasta 10 niños</p>
+            <ul style="color:var(--mid);font-size:0.88rem;margin-bottom:24px;">
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ 1,5 horas de taller creativo</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ Materiales incluidos</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ Cada niño se lleva su obra</li>
+              <li style="padding:6px 0;display:flex;gap:8px;align-items:center;color:#ccc;">✖ Decoración temática</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-outline" style="width:100%;text-align:center;">Solicitar presupuesto</a>
+          </div>
+        </div>
+
+        <div class="card" style="border-top: 5px solid var(--coral);transform:scale(1.03);box-shadow:var(--shadow-hover);">
+          <div class="card-body" style="padding-top:28px;">
+            <div style="font-size:2.5rem;margin-bottom:12px;">🎉</div>
+            <span class="tag" style="margin-bottom:8px;">Más popular</span>
+            <h3>Pack Premium</h3>
+            <p style="font-size:1.4rem;font-family:'Baloo 2',cursive;font-weight:800;color:var(--coral);margin-bottom:4px;">Desde 180€</p>
+            <p style="margin-bottom:20px;">Para hasta 12 niños</p>
+            <ul style="color:var(--mid);font-size:0.88rem;margin-bottom:24px;">
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ 2 horas de taller creativo</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ Materiales exclusivos</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ Decoración temática</li>
+              <li style="padding:6px 0;display:flex;gap:8px;align-items:center;">✅ Cada niño se lleva su obra</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary" style="width:100%;text-align:center;">Solicitar presupuesto</a>
+          </div>
+        </div>
+
+        <div class="card" style="border-top: 5px solid var(--lavender);">
+          <div class="card-body" style="padding-top:28px;">
+            <div style="font-size:2.5rem;margin-bottom:12px;">🏆</div>
+            <h3>Pack Deluxe</h3>
+            <p style="font-size:1.4rem;font-family:'Baloo 2',cursive;font-weight:800;color:var(--coral);margin-bottom:4px;">Desde 250€</p>
+            <p style="margin-bottom:20px;">Para hasta 15 niños</p>
+            <ul style="color:var(--mid);font-size:0.88rem;margin-bottom:24px;">
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ 2,5 horas de taller</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ Todo incluido</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--sand);display:flex;gap:8px;align-items:center;">✅ Reportaje fotográfico</li>
+              <li style="padding:6px 0;display:flex;gap:8px;align-items:center;">✅ Exposición de obras</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-outline" style="width:100%;text-align:center;">Solicitar presupuesto</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="background:var(--sand);border-radius:var(--radius);padding:28px;text-align:center;">
+        <p style="font-size:0.95rem;color:var(--mid);">
+          ¿Tienes dudas sobre qué pack elegir? <a href="contacto.html" style="color:var(--coral);font-weight:700;">Escríbenos</a> y te ayudamos a encontrar la opción perfecta para la celebración de tu pequeño 🎈
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>¿Alguna pregunta? ✋</h2>
+      <p>Estamos aquí para ayudarte. Contáctanos y te respondemos en menos de 24 horas.</p>
+      <div class="btn-group">
+        <a href="contacto.html" class="btn btn-primary">Contactar ahora</a>
+        <a href="academia.html" class="btn btn-outline">Conocer la academia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🎨</div>
+          <span>Arte Infantil Castellón</span>
+        </a>
+        <p>Un espacio creativo donde los niños descubren el arte, desarrollan su imaginación y expresan su personalidad única.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="academia.html">Academia</a></li>
+          <li><a href="talleres.html">Talleres y Eventos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Talleres</h5>
+        <ul>
+          <li><a href="talleres.html">Pintura y dibujo</a></li>
+          <li><a href="talleres.html">Manualidades</a></li>
+          <li><a href="talleres.html">Arcilla y cerámica</a></li>
+          <li><a href="talleres.html">Collage creativo</a></li>
+          <li><a href="talleres.html">Cumpleaños creativos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="#">📍 Calle Arte, 1 – Castellón</a></li>
+          <li><a href="#">📞 [Tu teléfono]</a></li>
+          <li><a href="#">✉️ [Tu email]</a></li>
+          <li><a href="#">🕐 Lunes a Viernes 16-20h</a></li>
+          <li><a href="#">🕐 Sábados 10-13h</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Academia de Arte Infantil Castellón. Todos los derechos reservados.</span>
+      <span>
+        <a href="#">Aviso legal</a> ·
+        <a href="#">Privacidad</a> ·
+        <a href="#">Cookies</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ── SCROLL TO TOP ── -->
+  <button id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => scrollBtn.classList.toggle('visible', window.scrollY > 400));
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    function switchTab(e, id) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
